@@ -1,8 +1,8 @@
 /*
 Pattern
-* * *
-* * *
-* * *
+A
+A B
+A B C
 */
 #include<iostream>
 using namespace std;
@@ -14,9 +14,11 @@ int main()
     cin>>n;
     for(int row=1;row<=n;row++)
     {
-        for(int col=1;col<=n;col++)
+        char stratingChar = 'A';
+        for(int col=1;col<=row;col++)
         {
-            cout<<"*"<<" ";
+            cout<<stratingChar<<" ";
+            stratingChar+=1;
         }
         cout<<endl;
     }

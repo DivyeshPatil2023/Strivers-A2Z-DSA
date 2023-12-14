@@ -1,8 +1,8 @@
 /*
 Pattern
-* * *
-* * *
-* * *
+C
+B C
+A B C
 */
 #include<iostream>
 using namespace std;
@@ -14,9 +14,11 @@ int main()
     cin>>n;
     for(int row=1;row<=n;row++)
     {
-        for(int col=1;col<=n;col++)
+        char startingChar = 'A'+n-row;
+        for(int col=1;col<=row;col++)
         {
-            cout<<"*"<<" ";
+            cout<<startingChar<<" ";
+            startingChar+=1;
         }
         cout<<endl;
     }

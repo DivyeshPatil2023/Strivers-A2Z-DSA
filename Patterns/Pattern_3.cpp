@@ -1,8 +1,8 @@
 /*
 Pattern
-* * *
-* * *
-* * *
+1
+1 2 
+1 2 3
 */
 #include<iostream>
 using namespace std;
@@ -14,9 +14,9 @@ int main()
     cin>>n;
     for(int row=1;row<=n;row++)
     {
-        for(int col=1;col<=n;col++)
+        for(int col=1;col<=row;col++)
         {
-            cout<<"*"<<" ";
+            cout<<col<<" ";
         }
         cout<<endl;
     }

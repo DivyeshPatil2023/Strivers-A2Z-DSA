@@ -1,7 +1,7 @@
 /*
 Pattern
-* * *
-* * *
+* 
+* * 
 * * *
 */
 #include<iostream>
@@ -14,7 +14,7 @@ int main()
     cin>>n;
     for(int row=1;row<=n;row++)
     {
-        for(int col=1;col<=n;col++)
+        for(int col=1;col<=row;col++)
         {
             cout<<"*"<<" ";
         }
